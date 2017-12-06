@@ -33,6 +33,10 @@
             bottom: 0;
         }
 
+        .layer-switcher {
+            top: 3em;
+        }
+
     </style>
     <script src="https://unpkg.com/openlayers@4.4.2"></script>
     <script src="https://unpkg.com/ol-popup@2.0.0"></script>
@@ -66,6 +70,9 @@
         });
 
         var catasto_attributions = [
+            new ol.Attribution({
+                html: '<br/>cartografia di base:<br/>© ' + '<a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+            }),
             new ol.Attribution({
                 html: '<br/>cartografia catastale:<br/>© ' + '<a href="https://creativecommons.org/licenses/by-nc-nd/2.0/it/">Agenzia delle Entrate</a>'
             }),
