@@ -276,8 +276,8 @@
                         getf_popup.show(evt.coordinate, xhttp.responseText);;
                     }
                 };
-                //bypass cors policy
-                xhttp.open("GET", "https://cors-anywhere.herokuapp.com/" + url, true);
+                
+                xhttp.open("GET", url, true);
                 xhttp.send();
 
             }
